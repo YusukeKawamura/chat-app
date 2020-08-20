@@ -3,7 +3,6 @@
   display: flex;
 }
 
-.side-bar{
 .side-bar {
   width: 300px;
   background-color: #253141;
@@ -53,19 +52,102 @@
   background-color: #ffffff;
 }
 
-.now-room {
+.right-heder {
   height: 100px;
   padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.now-room {
+  font-size: 24px;
+  color: #333;
+  margin-top: 36px;
+}
+
+.end-btn {
+  margin-top: 40px;
+}
+
+.end-btn a {
+  border: 1px solid darkred;
+  color: darkred;
+  padding: 20px;
+  text-decoration: none;
 }
 
 .main-bord {
   height: calc(100vh - 190px);
   background-color: #FAFAFA;
   padding: 46px 40px 0;
+  overflow: scroll;
+}
+
+.user-message {
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+
+.name-date {
+  display: flex;
+}
+
+.name {
+  font-size: 16px;
+  color: #434a54;
+  margin-right: 10px;
+}
+
+.date {
+  font-size: 12px;
+  color: #999;
+}
+
+.message {
+  font-size: 14px;
+  color: #434a54;
 }
 
 .message-bar {
   height: 90px;
   background-color: #DDDDDD;
   padding: 20px 40px;
+  display: flex;
+}
+
+.form-message {
+  width: 100%;
+  background-color: white;
+  display: flex;
+}
+
+.input-message {
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+  border-style: none;
+}
+
+.image-btn {
+  width: 60px;
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.send-btn {
+  height: 50px;
+  font-size: 16px;
+  background-color: #38aef0;
+  color: white;
+  padding: 0 20px;
+  margin-left: 15px;
+  border-style: none;
 }
