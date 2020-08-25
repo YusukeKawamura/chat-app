@@ -8,32 +8,7 @@
 </div>
 
 <div class="main-bord">
-  <div class="user-message">
-    <div class="name-date">
-      <div class="name">
-      ＜ユーザー1＞
-      </div>
-      <div class="date">
-      2020/01/01(Sun) 00:00:00
-      </div>
-    </div>
-    <div class="message">
-    あいうえお
-    </div>
-  </div>
-    <div class="user-message">
-    <div class="name-date">
-      <div class="name">
-      ＜ユーザー2＞
-      </div>
-      <div class="date">
-      2020/02/01(Mon) 00:00:00
-      </div>
-    </div>
-    <div class="message">
-    かきくけこ
-    </div>
-  </div>
+  <%= render partial: "message", collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], html: {class: "message-bar"}, local: true do |f|%>
